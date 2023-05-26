@@ -5,7 +5,7 @@ def is_palindrome(string: str) -> bool:
     """Check if string is palindrome."""
     string = string.lower()
     string = re.sub(r'[^\w\s]','',string)
-    string = (string.replace("", ""))
+    string = (string.replace(" ", ""))
 
     newstr = ""
     for i in range(len(string)-1, -1, -1):
